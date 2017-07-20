@@ -3,13 +3,14 @@ var request = require('request');
 var config= require('../config.json');
 console.log(JSON.stringify(config));
 var https=require('https');
+var msisdn=require('../msisdn.json');
 require('it-each')({ testPerIteration: true });
 
 
 console.log(JSON.stringify(config));
 describe('Iterar llamadas al BSS',function()
 {
-var msisdn=["59169365057","59175231456","59175231015"];
+var msisdnArray=[msisdn[0],msisdn[1],msisdn[2]];
 
 var options = {
   url: 'https://api.github.com/repos/request/request',
@@ -18,9 +19,9 @@ var options = {
   }
 };
 
-   it.each(msisdn,'Utilizing msisdn %s',['element'],function(element,next)
+   it.each(msisdnArray,'Utilizing msisdn %s',['element'],function(element,next)
 {
-  request({url:'https://prod.api.tigo.com/v1/tigo/mobile/bo/upselling/subscribers/'+element+'/account',
+  request({url:'https://'+config['host']+config['path']+'/'+element+'/account',
 				headers:{'Authorization':'Bearer '+config['token'],'User-Agent':'testing/edge' }},function(error,response,body)
 {
 
