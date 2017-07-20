@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Mochawesome Report</title><link rel="stylesheet" href="assets/app.css"/></head><body data-raw="{
+  &quot;stats&quot;: {
+    &quot;suites&quot;: 1,
+    &quot;tests&quot;: 3,
+    &quot;passes&quot;: 0,
+    &quot;pending&quot;: 0,
+    &quot;failures&quot;: 3,
+    &quot;start&quot;: &quot;2017-07-20T19:12:10.488Z&quot;,
+    &quot;end&quot;: &quot;2017-07-20T19:12:12.670Z&quot;,
+    &quot;duration&quot;: 2182,
+    &quot;testsRegistered&quot;: 3,
+    &quot;passPercent&quot;: 0,
+    &quot;pendingPercent&quot;: 0,
+    &quot;other&quot;: 0,
+    &quot;hasOther&quot;: false,
+    &quot;skipped&quot;: 0,
+    &quot;hasSkipped&quot;: false,
+    &quot;passPercentClass&quot;: &quot;danger&quot;,
+    &quot;pendingPercentClass&quot;: &quot;danger&quot;
+  },
+  &quot;suites&quot;: {
+    &quot;title&quot;: &quot;&quot;,
+    &quot;suites&quot;: [
+      {
+        &quot;title&quot;: &quot;Iterar llamadas al BSS&quot;,
+        &quot;suites&quot;: [],
+        &quot;tests&quot;: [
+          {
+            &quot;title&quot;: &quot;Utilizing msisdn 59169365057&quot;,
+            &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59169365057&quot;,
+            &quot;timedOut&quot;: false,
+            &quot;duration&quot;: 0,
+            &quot;state&quot;: &quot;failed&quot;,
+            &quot;pass&quot;: false,
+            &quot;fail&quot;: true,
+            &quot;pending&quot;: false,
+            &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+            &quot;err&quot;: {
+              &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+              &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+              &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;69365057                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;69365057                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+            },
+            &quot;isRoot&quot;: false,
+            &quot;uuid&quot;: &quot;866b6934-c276-4e04-86e3-b9095b4a10b0&quot;,
+            &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+            &quot;isHook&quot;: false,
+            &quot;skipped&quot;: false
+          },
+          {
+            &quot;title&quot;: &quot;Utilizing msisdn 59175231456&quot;,
+            &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231456&quot;,
+            &quot;timedOut&quot;: false,
+            &quot;duration&quot;: 0,
+            &quot;state&quot;: &quot;failed&quot;,
+            &quot;pass&quot;: false,
+            &quot;fail&quot;: true,
+            &quot;pending&quot;: false,
+            &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+            &quot;err&quot;: {
+              &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+              &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+              &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231456                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231456                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+            },
+            &quot;isRoot&quot;: false,
+            &quot;uuid&quot;: &quot;f53b540b-9f6c-4b18-97d9-08f73b2e6d14&quot;,
+            &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+            &quot;isHook&quot;: false,
+            &quot;skipped&quot;: false
+          },
+          {
+            &quot;title&quot;: &quot;Utilizing msisdn 59175231015&quot;,
+            &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231015&quot;,
+            &quot;timedOut&quot;: false,
+            &quot;duration&quot;: 0,
+            &quot;state&quot;: &quot;failed&quot;,
+            &quot;pass&quot;: false,
+            &quot;fail&quot;: true,
+            &quot;pending&quot;: false,
+            &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+            &quot;err&quot;: {
+              &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+              &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+              &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231015                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;INTERNAL LOTHAR USAGE - DO NOT DELETE   \&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;CALLE 14 DE CALACOTO ESQ SANCHEZ BUSTAMANTE EDIFICIO METROBOL 1 PISO            \&quot;\n-       \&quot;city\&quot;: 504\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F    \&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F    \&quot;\n-     }\n-     \&quot;clientCode\&quot;: 11189179\n-     \&quot;contract\&quot;: 4310384\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F    \&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231015                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: \&quot;774L\&quot;\n-       \&quot;planDescription\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n-       \&quot;planName\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;HIB\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+            },
+            &quot;isRoot&quot;: false,
+            &quot;uuid&quot;: &quot;e487fd5e-ed25-4458-b2e3-98807c2bafa2&quot;,
+            &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+            &quot;isHook&quot;: false,
+            &quot;skipped&quot;: false
+          }
+        ],
+        &quot;pending&quot;: [],
+        &quot;root&quot;: false,
+        &quot;_timeout&quot;: 2000,
+        &quot;file&quot;: &quot;/test/test-file.js&quot;,
+        &quot;uuid&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+        &quot;beforeHooks&quot;: [],
+        &quot;afterHooks&quot;: [],
+        &quot;fullFile&quot;: &quot;/home/kiquetal/Documents/codes/2017/test-chai/test/test-file.js&quot;,
+        &quot;passes&quot;: [],
+        &quot;failures&quot;: [
+          {
+            &quot;title&quot;: &quot;Utilizing msisdn 59169365057&quot;,
+            &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59169365057&quot;,
+            &quot;timedOut&quot;: false,
+            &quot;duration&quot;: 0,
+            &quot;state&quot;: &quot;failed&quot;,
+            &quot;pass&quot;: false,
+            &quot;fail&quot;: true,
+            &quot;pending&quot;: false,
+            &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+            &quot;err&quot;: {
+              &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+              &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+              &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;69365057                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;69365057                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+            },
+            &quot;isRoot&quot;: false,
+            &quot;uuid&quot;: &quot;866b6934-c276-4e04-86e3-b9095b4a10b0&quot;,
+            &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+            &quot;isHook&quot;: false,
+            &quot;skipped&quot;: false
+          },
+          {
+            &quot;title&quot;: &quot;Utilizing msisdn 59175231456&quot;,
+            &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231456&quot;,
+            &quot;timedOut&quot;: false,
+            &quot;duration&quot;: 0,
+            &quot;state&quot;: &quot;failed&quot;,
+            &quot;pass&quot;: false,
+            &quot;fail&quot;: true,
+            &quot;pending&quot;: false,
+            &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+            &quot;err&quot;: {
+              &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+              &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+              &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231456                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231456                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+            },
+            &quot;isRoot&quot;: false,
+            &quot;uuid&quot;: &quot;f53b540b-9f6c-4b18-97d9-08f73b2e6d14&quot;,
+            &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+            &quot;isHook&quot;: false,
+            &quot;skipped&quot;: false
+          },
+          {
+            &quot;title&quot;: &quot;Utilizing msisdn 59175231015&quot;,
+            &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231015&quot;,
+            &quot;timedOut&quot;: false,
+            &quot;duration&quot;: 0,
+            &quot;state&quot;: &quot;failed&quot;,
+            &quot;pass&quot;: false,
+            &quot;fail&quot;: true,
+            &quot;pending&quot;: false,
+            &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+            &quot;err&quot;: {
+              &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+              &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+              &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231015                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;INTERNAL LOTHAR USAGE - DO NOT DELETE   \&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;CALLE 14 DE CALACOTO ESQ SANCHEZ BUSTAMANTE EDIFICIO METROBOL 1 PISO            \&quot;\n-       \&quot;city\&quot;: 504\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F    \&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F    \&quot;\n-     }\n-     \&quot;clientCode\&quot;: 11189179\n-     \&quot;contract\&quot;: 4310384\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F    \&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231015                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: \&quot;774L\&quot;\n-       \&quot;planDescription\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n-       \&quot;planName\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;HIB\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+            },
+            &quot;isRoot&quot;: false,
+            &quot;uuid&quot;: &quot;e487fd5e-ed25-4458-b2e3-98807c2bafa2&quot;,
+            &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+            &quot;isHook&quot;: false,
+            &quot;skipped&quot;: false
+          }
+        ],
+        &quot;skipped&quot;: [],
+        &quot;hasBeforeHooks&quot;: false,
+        &quot;hasAfterHooks&quot;: false,
+        &quot;hasTests&quot;: true,
+        &quot;hasSuites&quot;: false,
+        &quot;totalTests&quot;: 3,
+        &quot;totalPasses&quot;: 0,
+        &quot;totalFailures&quot;: 3,
+        &quot;totalPending&quot;: 0,
+        &quot;totalSkipped&quot;: 0,
+        &quot;hasPasses&quot;: false,
+        &quot;hasFailures&quot;: true,
+        &quot;hasPending&quot;: false,
+        &quot;hasSkipped&quot;: false,
+        &quot;duration&quot;: 0,
+        &quot;rootEmpty&quot;: false
+      }
+    ],
+    &quot;tests&quot;: [],
+    &quot;pending&quot;: [],
+    &quot;root&quot;: true,
+    &quot;_timeout&quot;: 2000,
+    &quot;uuid&quot;: &quot;82f84381-3bc6-44d1-9b41-70fac8a63d43&quot;,
+    &quot;beforeHooks&quot;: [],
+    &quot;afterHooks&quot;: [],
+    &quot;fullFile&quot;: &quot;&quot;,
+    &quot;file&quot;: &quot;&quot;,
+    &quot;passes&quot;: [],
+    &quot;failures&quot;: [],
+    &quot;skipped&quot;: [],
+    &quot;hasBeforeHooks&quot;: false,
+    &quot;hasAfterHooks&quot;: false,
+    &quot;hasTests&quot;: false,
+    &quot;hasSuites&quot;: true,
+    &quot;totalTests&quot;: 0,
+    &quot;totalPasses&quot;: 0,
+    &quot;totalFailures&quot;: 0,
+    &quot;totalPending&quot;: 0,
+    &quot;totalSkipped&quot;: 0,
+    &quot;hasPasses&quot;: false,
+    &quot;hasFailures&quot;: false,
+    &quot;hasPending&quot;: false,
+    &quot;hasSkipped&quot;: false,
+    &quot;duration&quot;: 0,
+    &quot;rootEmpty&quot;: true
+  },
+  &quot;allTests&quot;: [
+    {
+      &quot;title&quot;: &quot;Utilizing msisdn 59169365057&quot;,
+      &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59169365057&quot;,
+      &quot;timedOut&quot;: false,
+      &quot;duration&quot;: 0,
+      &quot;state&quot;: &quot;failed&quot;,
+      &quot;pass&quot;: false,
+      &quot;fail&quot;: true,
+      &quot;pending&quot;: false,
+      &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+      &quot;err&quot;: {
+        &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+        &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+        &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;69365057                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;69365057                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+      },
+      &quot;isRoot&quot;: false,
+      &quot;uuid&quot;: &quot;866b6934-c276-4e04-86e3-b9095b4a10b0&quot;,
+      &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+      &quot;isHook&quot;: false,
+      &quot;skipped&quot;: false
+    },
+    {
+      &quot;title&quot;: &quot;Utilizing msisdn 59175231456&quot;,
+      &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231456&quot;,
+      &quot;timedOut&quot;: false,
+      &quot;duration&quot;: 0,
+      &quot;state&quot;: &quot;failed&quot;,
+      &quot;pass&quot;: false,
+      &quot;fail&quot;: true,
+      &quot;pending&quot;: false,
+      &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+      &quot;err&quot;: {
+        &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+        &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+        &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231456                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231456                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+      },
+      &quot;isRoot&quot;: false,
+      &quot;uuid&quot;: &quot;f53b540b-9f6c-4b18-97d9-08f73b2e6d14&quot;,
+      &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+      &quot;isHook&quot;: false,
+      &quot;skipped&quot;: false
+    },
+    {
+      &quot;title&quot;: &quot;Utilizing msisdn 59175231015&quot;,
+      &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231015&quot;,
+      &quot;timedOut&quot;: false,
+      &quot;duration&quot;: 0,
+      &quot;state&quot;: &quot;failed&quot;,
+      &quot;pass&quot;: false,
+      &quot;fail&quot;: true,
+      &quot;pending&quot;: false,
+      &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+      &quot;err&quot;: {
+        &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+        &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+        &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231015                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;INTERNAL LOTHAR USAGE - DO NOT DELETE   \&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;CALLE 14 DE CALACOTO ESQ SANCHEZ BUSTAMANTE EDIFICIO METROBOL 1 PISO            \&quot;\n-       \&quot;city\&quot;: 504\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F    \&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F    \&quot;\n-     }\n-     \&quot;clientCode\&quot;: 11189179\n-     \&quot;contract\&quot;: 4310384\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F    \&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231015                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: \&quot;774L\&quot;\n-       \&quot;planDescription\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n-       \&quot;planName\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;HIB\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+      },
+      &quot;isRoot&quot;: false,
+      &quot;uuid&quot;: &quot;e487fd5e-ed25-4458-b2e3-98807c2bafa2&quot;,
+      &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+      &quot;isHook&quot;: false,
+      &quot;skipped&quot;: false
+    }
+  ],
+  &quot;allPending&quot;: [],
+  &quot;allPasses&quot;: [],
+  &quot;allFailures&quot;: [
+    {
+      &quot;title&quot;: &quot;Utilizing msisdn 59169365057&quot;,
+      &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59169365057&quot;,
+      &quot;timedOut&quot;: false,
+      &quot;duration&quot;: 0,
+      &quot;state&quot;: &quot;failed&quot;,
+      &quot;pass&quot;: false,
+      &quot;fail&quot;: true,
+      &quot;pending&quot;: false,
+      &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+      &quot;err&quot;: {
+        &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+        &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+        &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;69365057                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;69365057                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-05-05T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+      },
+      &quot;isRoot&quot;: false,
+      &quot;uuid&quot;: &quot;866b6934-c276-4e04-86e3-b9095b4a10b0&quot;,
+      &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+      &quot;isHook&quot;: false,
+      &quot;skipped&quot;: false
+    },
+    {
+      &quot;title&quot;: &quot;Utilizing msisdn 59175231456&quot;,
+      &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231456&quot;,
+      &quot;timedOut&quot;: false,
+      &quot;duration&quot;: 0,
+      &quot;state&quot;: &quot;failed&quot;,
+      &quot;pass&quot;: false,
+      &quot;fail&quot;: true,
+      &quot;pending&quot;: false,
+      &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+      &quot;err&quot;: {
+        &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+        &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+        &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231456                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;IVR\&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)\&quot;\n-       \&quot;city\&quot;: 0\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F\&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F\&quot;\n-     }\n-     \&quot;clientCode\&quot;: 1501554\n-     \&quot;contract\&quot;: 1132\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F\&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231456                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: 189\n-       \&quot;planDescription\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n-       \&quot;planName\&quot;: \&quot;Plan 189 - LTE Prepago Handset          \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;PRE\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2017-02-06T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+      },
+      &quot;isRoot&quot;: false,
+      &quot;uuid&quot;: &quot;f53b540b-9f6c-4b18-97d9-08f73b2e6d14&quot;,
+      &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+      &quot;isHook&quot;: false,
+      &quot;skipped&quot;: false
+    },
+    {
+      &quot;title&quot;: &quot;Utilizing msisdn 59175231015&quot;,
+      &quot;fullTitle&quot;: &quot;Iterar llamadas al BSS Utilizing msisdn 59175231015&quot;,
+      &quot;timedOut&quot;: false,
+      &quot;duration&quot;: 0,
+      &quot;state&quot;: &quot;failed&quot;,
+      &quot;pass&quot;: false,
+      &quot;fail&quot;: true,
+      &quot;pending&quot;: false,
+      &quot;code&quot;: &quot;process.bind(this)(test, done);&quot;,
+      &quot;err&quot;: {
+        &quot;message&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }&quot;,
+        &quot;estack&quot;: &quot;AssertionError: expected { Object (account) } to equal { Object (account) }\n    at Request._callback (test/test-file.js:28:30)\n    at Request.self.callback (node_modules/request/request.js:188:22)\n    at Request.&lt;anonymous&gt; (node_modules/request/request.js:1171:10)\n    at IncomingMessage.&lt;anonymous&gt; (node_modules/request/request.js:1091:12)\n    at endReadableNT (_stream_readable.js:923:12)&quot;,
+        &quot;diff&quot;: &quot; {\n   \&quot;account\&quot;: {\n-     \&quot;accountId\&quot;: \&quot;75231015                    \&quot;\n-     \&quot;accountName\&quot;: \&quot;INTERNAL LOTHAR USAGE - DO NOT DELETE   \&quot;\n-     \&quot;billingAddress\&quot;: {\n-       \&quot;address\&quot;: \&quot;CALLE 14 DE CALACOTO ESQ SANCHEZ BUSTAMANTE EDIFICIO METROBOL 1 PISO            \&quot;\n-       \&quot;city\&quot;: 504\n-       \&quot;department\&quot;: [null]\n-       \&quot;zone\&quot;: [null]\n-     }\n-     \&quot;billingInfo\&quot;: {\n-       \&quot;billingCycle\&quot;: \&quot;F    \&quot;\n-       \&quot;codeBillingCycle\&quot;: \&quot;F    \&quot;\n-     }\n-     \&quot;clientCode\&quot;: 11189179\n-     \&quot;contract\&quot;: 4310384\n+     \&quot;accountId\&quot;: \&quot;77657144\&quot;\n+     \&quot;accountName\&quot;: \&quot;unknown\&quot;\n+     \&quot;billingAddress\&quot;: {}\n+     \&quot;billingInfo\&quot;: {}\n+     \&quot;clientCode\&quot;: \&quot;13873834\&quot;\n+     \&quot;contract\&quot;: \&quot;77657144\&quot;\n     \&quot;contractType\&quot;: [null]\n-     \&quot;creationDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n+     \&quot;creationDate\&quot;: \&quot;\&quot;\n     \&quot;csn\&quot;: [null]\n-     \&quot;cycle\&quot;: \&quot;F    \&quot;\n     \&quot;line\&quot;: {\n       \&quot;imei\&quot;: [null]\n       \&quot;imsi\&quot;: [null]\n-       \&quot;msisdn\&quot;: \&quot;75231015                    \&quot;\n+       \&quot;msisdn\&quot;: \&quot;\&quot;\n     }\n+     \&quot;msisdn\&quot;: \&quot;77657144\&quot;\n     \&quot;partNum\&quot;: [null]\n     \&quot;plan\&quot;: {\n-       \&quot;dataPlanOnly\&quot;: false\n-       \&quot;planCode\&quot;: \&quot;774L\&quot;\n-       \&quot;planDescription\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n-       \&quot;planName\&quot;: \&quot;BOLSA TIGO BUSINESS LTE FF100           \&quot;\n+       \&quot;dataPlanOnly\&quot;: [null]\n+       \&quot;planCode\&quot;: [null]\n+       \&quot;planDescription\&quot;: [null]\n+       \&quot;planName\&quot;: \&quot;FN all day 10\&quot;\n       \&quot;planSource\&quot;: [null]\n-       \&quot;planType\&quot;: \&quot;HIB\&quot;\n+       \&quot;planType\&quot;: \&quot;prepaid\&quot;\n     }\n     \&quot;portability\&quot;: [null]\n     \&quot;scoring\&quot;: [null]\n-     \&quot;startDate\&quot;: \&quot;2008-06-14T00:00:00.000-04:00\&quot;\n-     \&quot;status\&quot;: \&quot;AC\&quot;\n+     \&quot;startDate\&quot;: \&quot;2015-10-02T21:47:09.000Z\&quot;\n+     \&quot;status\&quot;: \&quot;active\&quot;\n     \&quot;telephonyType\&quot;: [null]\n   }\n }\n&quot;
+      },
+      &quot;isRoot&quot;: false,
+      &quot;uuid&quot;: &quot;e487fd5e-ed25-4458-b2e3-98807c2bafa2&quot;,
+      &quot;parentUUID&quot;: &quot;d96b4015-3a86-4e24-99e4-0b28d724df1c&quot;,
+      &quot;isHook&quot;: false,
+      &quot;skipped&quot;: false
+    }
+  ],
+  &quot;copyrightYear&quot;: 2017
+}" data-config="{&quot;reportDir&quot;:&quot;mochawesome-report&quot;,&quot;reportTitle&quot;:&quot;test-chai&quot;,&quot;reportPageTitle&quot;:&quot;Mochawesome Report&quot;,&quot;inline&quot;:false,&quot;inlineAssets&quot;:false,&quot;charts&quot;:true,&quot;enableCharts&quot;:true,&quot;code&quot;:true,&quot;enableCode&quot;:true,&quot;autoOpen&quot;:false,&quot;overwrite&quot;:true,&quot;timestamp&quot;:false,&quot;ts&quot;:false,&quot;showHooks&quot;:&quot;failed&quot;,&quot;dev&quot;:false,&quot;saveJson&quot;:true,&quot;reportFilename&quot;:&quot;mochawesome&quot;,&quot;jsonFile&quot;:&quot;/home/kiquetal/Documents/codes/2017/test-chai/mochawesome-report/mochawesome.json&quot;,&quot;htmlFile&quot;:&quot;/home/kiquetal/Documents/codes/2017/test-chai/mochawesome-report/mochawesome.html&quot;}"><div id="report"></div><script src="assets/app.js"></script></body></html>
