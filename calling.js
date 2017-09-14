@@ -2,12 +2,15 @@ var async=require('async');
 var config=require("./config.json");
 var request=require('request');
 var msisdn=require('./msisdn.json');
-var arrayMsisdn=[msisdn[0],msisdn[1],msisdn[2]];
+var arrayMsisdn=msisdn;
+var compareLib=require('./compareLib');
+
+
 async.each(arrayMsisdn,function(item,next)
  {
     async.waterfall(
         [
-            callLegacy.bind(null,{msisdn:'59169365057'}),
+            callLegacy.bind(null,{msisdn:item}),
             callBSS
         ],
         function(err,result)
@@ -16,11 +19,12 @@ async.each(arrayMsisdn,function(item,next)
             {
                 console.log("\nERROR\n");
                 console.log(err);
+				next();
                 return;
             }
             else
             {
-                console.log("\nFINALIZADO WATERFALL "+result+ "\n") ;
+                console.log("\nFinish waterfall: "+result+ "\n") ;
                 next();
             }
         }
@@ -28,7 +32,7 @@ async.each(arrayMsisdn,function(item,next)
 }
 ,function (err,result2)
 {
-   console.log("Fin de la iteracion async series");
+   console.log("[[[[=====================end iteration async series================]]]]");
 }
 );
 function callLegacy(opt,callback)
@@ -52,8 +56,15 @@ function callBSS(msisdn,arg1,callback)
             {
                  if (error) return callback(error);
                  else{
-                     console.log("no error");
-                     callback(null,'terminado la comparacion para '+msisdn+"\n"+arg1);
+                    // console.log("no error");
+					// callback(null,'Comparing for:'+msisdn+"\n=====LEGACY\n="+arg1+"\nBSS=======\n="+body);
+                       var legacyValues=compareLib.obtainArrayCritical(JSON.parse(arg1));
+                       
+                       
+                       var bssValues=compareLib.obtainArrayCritical(JSON.parse(body));
+                      //  console.log(bssValues);
+                      //  console.log(legacyValues);
+                        callback(null,'MSISDN: '+msisdn +"\n"+" BSS VALUES: "+ JSON.stringify(bssValues) + "\n LEGACY VALUES: " +JSON.stringify(legacyValues));
                  }
              });
 }

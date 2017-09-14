@@ -1,0 +1,1479 @@
+
+Finish waterfall: Comparing for:59169068472
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69068472                    ",
+    "accountName": "KARLA  LORENA                           ",
+    "billingAddress": {},
+    "billingInfo": {},
+    "clientCode": 12540198,
+    "contract": 5829852,
+    "contractType": null,
+    "creationDate": "2015-02-04T00:00:00.000-04:00",
+    "csn": null,
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69068472                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2015-02-04T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={
+  "errors": [{
+    "status": "500",
+    "title": "Codec not found for requested operation: [bigint <-> java.math.BigDecimal]",
+    "meta": {
+      "recoverable": true,
+      "message": "Fail",
+      "exception-type": "com.datastax.driver.core.exceptions.CodecNotFoundException",
+      "stacktrace": ["com.datastax.driver.core.CodecRegistry.notFound(CodecRegistry.java:679)", "com.datastax.driver.core.CodecRegistry.createCodec(CodecRegistry.java:526)", "com.datastax.driver.core.CodecRegistry.findCodec(CodecRegistry.java:506)", "com.datastax.driver.core.CodecRegistry.access$200(CodecRegistry.java:140)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:211)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:208)", "com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524)", "com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317)", "com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280)", "com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195)", "com.google.common.cache.LocalCache.get(LocalCache.java:3934)", "com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938)", "com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821)", "com.datastax.driver.core.CodecRegistry.lookupCodec(CodecRegistry.java:480)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:448)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:430)", "com.datastax.driver.core.AbstractGettableByIndexData.codecFor(AbstractGettableByIndexData.java:69)", "com.datastax.driver.core.AbstractGettableByIndexData.getDecimal(AbstractGettableByIndexData.java:260)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:26)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:175)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructValue(Query.scala:391)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "scala.collection.TraversableLike$$anonfun$filterImpl$1.apply(TraversableLike.scala:248)", "scala.collection.immutable.List.foreach(List.scala:381)", "scala.collection.TraversableLike$class.filterImpl(TraversableLike.scala:247)", "scala.collection.TraversableLike$class.filter(TraversableLike.scala:259)", "scala.collection.AbstractTraversable.filter(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructGroupValue(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:371)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:370)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.immutable.Map$Map1.foreach(Map.scala:116)", "scala.collection.TraversableLike$class.map(TraversableLike.scala:234)", "scala.collection.AbstractTraversable.map(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.attributesFromRow(Query.scala:370)", "com.qvantel.rubik.cm.data.Query$.resourceFromRow(Query.scala:346)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:60)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:52)", "scala.util.Success$$anonfun$map$1.apply(Try.scala:237)", "scala.util.Try$.apply(Try.scala:192)", "scala.util.Success.map(Try.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.impl.CallbackRunnable.run_aroundBody0(Promise.scala:32)", "scala.concurrent.impl.CallbackRunnable$AjcClosure1.run(Promise.scala:1)", "org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)", "kamon.scala.instrumentation.FutureInstrumentation$$anonfun$aroundExecution$1.apply(FutureInstrumentation.scala:45)", "kamon.trace.Tracer$.withContext(TracerModule.scala:58)", "kamon.scala.instrumentation.FutureInstrumentation.aroundExecution(FutureInstrumentation.scala:44)", "scala.concurrent.impl.CallbackRunnable.run(Promise.scala:31)", "scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:121)", "scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)", "scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253)", "scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346)", "scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)", "scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)"]
+    }
+  }]
+}
+
+
+Finish waterfall: Comparing for:59178824720
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "78824720                    ",
+    "accountName": "WILFREDO MAX                            ",
+    "billingAddress": {},
+    "billingInfo": {},
+    "clientCode": 12090968,
+    "contract": 5340040,
+    "contractType": null,
+    "creationDate": "2015-01-03T00:00:00.000-04:00",
+    "csn": null,
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "78824720                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2015-01-03T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={
+  "errors": [{
+    "status": "500",
+    "title": "Codec not found for requested operation: [bigint <-> java.math.BigDecimal]",
+    "meta": {
+      "recoverable": true,
+      "message": "Fail",
+      "exception-type": "com.datastax.driver.core.exceptions.CodecNotFoundException",
+      "stacktrace": ["com.datastax.driver.core.CodecRegistry.notFound(CodecRegistry.java:679)", "com.datastax.driver.core.CodecRegistry.createCodec(CodecRegistry.java:526)", "com.datastax.driver.core.CodecRegistry.findCodec(CodecRegistry.java:506)", "com.datastax.driver.core.CodecRegistry.access$200(CodecRegistry.java:140)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:211)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:208)", "com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524)", "com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317)", "com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280)", "com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195)", "com.google.common.cache.LocalCache.get(LocalCache.java:3934)", "com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938)", "com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821)", "com.datastax.driver.core.CodecRegistry.lookupCodec(CodecRegistry.java:480)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:448)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:430)", "com.datastax.driver.core.AbstractGettableByIndexData.codecFor(AbstractGettableByIndexData.java:69)", "com.datastax.driver.core.AbstractGettableByIndexData.getDecimal(AbstractGettableByIndexData.java:260)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:26)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:175)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructValue(Query.scala:391)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "scala.collection.TraversableLike$$anonfun$filterImpl$1.apply(TraversableLike.scala:248)", "scala.collection.immutable.List.foreach(List.scala:381)", "scala.collection.TraversableLike$class.filterImpl(TraversableLike.scala:247)", "scala.collection.TraversableLike$class.filter(TraversableLike.scala:259)", "scala.collection.AbstractTraversable.filter(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructGroupValue(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:371)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:370)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.immutable.Map$Map1.foreach(Map.scala:116)", "scala.collection.TraversableLike$class.map(TraversableLike.scala:234)", "scala.collection.AbstractTraversable.map(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.attributesFromRow(Query.scala:370)", "com.qvantel.rubik.cm.data.Query$.resourceFromRow(Query.scala:346)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:60)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:52)", "scala.util.Success$$anonfun$map$1.apply(Try.scala:237)", "scala.util.Try$.apply(Try.scala:192)", "scala.util.Success.map(Try.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.impl.CallbackRunnable.run_aroundBody0(Promise.scala:32)", "scala.concurrent.impl.CallbackRunnable$AjcClosure1.run(Promise.scala:1)", "org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)", "kamon.scala.instrumentation.FutureInstrumentation$$anonfun$aroundExecution$1.apply(FutureInstrumentation.scala:45)", "kamon.trace.Tracer$.withContext(TracerModule.scala:58)", "kamon.scala.instrumentation.FutureInstrumentation.aroundExecution(FutureInstrumentation.scala:44)", "scala.concurrent.impl.CallbackRunnable.run(Promise.scala:31)", "scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:121)", "scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)", "scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253)", "scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346)", "scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)", "scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)"]
+    }
+  }]
+}
+
+
+Finish waterfall: Comparing for:59169501280
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69501280                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2014-03-17T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69501280                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "GSM - Plan 672 - Prepago TIGO           ",
+      "planType": "PRE",
+      "planCode": 672,
+      "planDescription": "GSM - Plan 672 - Prepago TIGO           ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2014-03-17T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169501280","accountName":"RUDY ESTRADA MAMANI","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69501280","contractType":null,"creationDate":"2014-03-17T16:34:34.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169501280"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2014-03-17T16:34:34.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169307817
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69307817                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2017-02-13T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69307817                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2017-02-13T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169307817","accountName":"MARIELA BUITRAGO ALDANA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"693078178711c7592a2049f58868eec028d62feb","contractType":null,"creationDate":"2017-02-13T13:12:46.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169307817"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2017-02-13T13:12:46.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59178956131
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "78956131                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-08-29T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "78956131                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-08-29T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59178956131","accountName":"MIGUEL TICONA QUENTA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"78956131","contractType":null,"creationDate":"2016-08-29T16:34:13.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59178956131"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-08-29T16:34:13.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169246693
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69246693                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2017-06-06T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69246693                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2017-06-06T00:00:00.000-04:00",
+    "status": "NN",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169246693","accountName":"MARIA JOSE APARICIO MIRANDA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69246693fc10514f3fb1495ca43e1bf9f681709a","contractType":null,"creationDate":"2016-10-26T17:31:59.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169246693"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-10-26T17:31:59.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169442777
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69442777                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-08-11T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69442777                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-08-11T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169442777","accountName":"NOEMI QUISPE CONDORI","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69442777","contractType":null,"creationDate":"2016-08-11T13:31:41.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169442777"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-08-11T13:31:41.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169196870
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69196870                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2015-06-18T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69196870                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "GSM - Plan 672 - Prepago TIGO           ",
+      "planType": "PRE",
+      "planCode": 672,
+      "planDescription": "GSM - Plan 672 - Prepago TIGO           ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2015-06-18T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169196870","accountName":"DORIS LOPEZ ORTIZ","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69196870","contractType":null,"creationDate":"2015-06-18T13:14:42.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169196870"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2015-06-18T13:14:42.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169243973
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69243973                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-09-27T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69243973                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-09-27T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169243973","accountName":"RONALITO BARRETO GONZALES","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69243973","contractType":null,"creationDate":"2016-09-28T01:34:41.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169243973"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-09-28T01:34:41.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169444919
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69444919                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2015-03-05T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69444919                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2015-03-05T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169444919","accountName":"HERNAN PABLO BALDIVIEZO ALVAREZ","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69444919","contractType":null,"creationDate":"2015-03-05T17:12:03.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169444919"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2015-03-05T17:12:03.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169221248
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69221248                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-12-02T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69221248                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-12-02T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169221248","accountName":"JAIME PINTO PE#ARANDA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69221248f9624eda896d48d1b090ec13b41833ad","contractType":null,"creationDate":"2016-12-02T13:32:03.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169221248"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-12-02T13:32:03.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169458434
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69458434                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2017-07-27T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69458434                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2017-07-27T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169458434","accountName":"VICTOR HUGO PATI#O CAMACHO","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"6945843418e77b162e6245a293db69c292a78925","contractType":null,"creationDate":"2016-12-17T20:59:06.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169458434"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-12-17T20:59:06.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169382965
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69382965                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2012-02-02T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69382965                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2012-02-02T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169382965","accountName":"MARIA ELENA MAMANI CALIZAYA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69382965","contractType":null,"creationDate":"2012-02-02T14:56:22.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169382965"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2012-02-02T14:56:22.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169446261
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69446261                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-12-22T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69446261                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-12-22T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169446261","accountName":"RENATO NOGALES BERROCAL","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69446261ec56ecd92a2242d3b5df7f47081bc55d","contractType":null,"creationDate":"2016-12-22T14:55:26.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169446261"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-12-22T14:55:26.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59178875690
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "78875690                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2014-04-01T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "78875690                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2014-04-01T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59178875690","accountName":"EDSON MAURICIO LOPEZ","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"78875690","contractType":null,"creationDate":"2014-04-01T23:04:29.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59178875690"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2014-04-01T23:04:29.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169156821
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69156821                    ",
+    "accountName": "PEDRO HENRIQUE                          ",
+    "billingAddress": {},
+    "billingInfo": {},
+    "clientCode": 13969611,
+    "contract": 7542954,
+    "contractType": null,
+    "creationDate": "2014-03-08T00:00:00.000-04:00",
+    "csn": null,
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69156821                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2014-03-08T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={
+  "errors": [{
+    "status": "500",
+    "title": "Codec not found for requested operation: [bigint <-> java.math.BigDecimal]",
+    "meta": {
+      "recoverable": true,
+      "message": "Fail",
+      "exception-type": "com.datastax.driver.core.exceptions.CodecNotFoundException",
+      "stacktrace": ["com.datastax.driver.core.CodecRegistry.notFound(CodecRegistry.java:679)", "com.datastax.driver.core.CodecRegistry.createCodec(CodecRegistry.java:526)", "com.datastax.driver.core.CodecRegistry.findCodec(CodecRegistry.java:506)", "com.datastax.driver.core.CodecRegistry.access$200(CodecRegistry.java:140)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:211)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:208)", "com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524)", "com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317)", "com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280)", "com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195)", "com.google.common.cache.LocalCache.get(LocalCache.java:3934)", "com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938)", "com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821)", "com.datastax.driver.core.CodecRegistry.lookupCodec(CodecRegistry.java:480)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:448)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:430)", "com.datastax.driver.core.AbstractGettableByIndexData.codecFor(AbstractGettableByIndexData.java:69)", "com.datastax.driver.core.AbstractGettableByIndexData.getDecimal(AbstractGettableByIndexData.java:260)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:26)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:175)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructValue(Query.scala:391)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "scala.collection.TraversableLike$$anonfun$filterImpl$1.apply(TraversableLike.scala:248)", "scala.collection.immutable.List.foreach(List.scala:381)", "scala.collection.TraversableLike$class.filterImpl(TraversableLike.scala:247)", "scala.collection.TraversableLike$class.filter(TraversableLike.scala:259)", "scala.collection.AbstractTraversable.filter(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructGroupValue(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:371)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:370)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.immutable.Map$Map1.foreach(Map.scala:116)", "scala.collection.TraversableLike$class.map(TraversableLike.scala:234)", "scala.collection.AbstractTraversable.map(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.attributesFromRow(Query.scala:370)", "com.qvantel.rubik.cm.data.Query$.resourceFromRow(Query.scala:346)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:60)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:52)", "scala.util.Success$$anonfun$map$1.apply(Try.scala:237)", "scala.util.Try$.apply(Try.scala:192)", "scala.util.Success.map(Try.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.impl.CallbackRunnable.run_aroundBody0(Promise.scala:32)", "scala.concurrent.impl.CallbackRunnable$AjcClosure1.run(Promise.scala:1)", "org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)", "kamon.scala.instrumentation.FutureInstrumentation$$anonfun$aroundExecution$1.apply(FutureInstrumentation.scala:45)", "kamon.trace.Tracer$.withContext(TracerModule.scala:58)", "kamon.scala.instrumentation.FutureInstrumentation.aroundExecution(FutureInstrumentation.scala:44)", "scala.concurrent.impl.CallbackRunnable.run(Promise.scala:31)", "scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:121)", "scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)", "scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)", "scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)", "scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)"]
+    }
+  }]
+}
+
+
+Finish waterfall: Comparing for:59169492941
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69492941                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-08-08T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69492941                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-08-08T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169492941","accountName":"JHONATHAN COCA MEDRANO","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69492941","contractType":null,"creationDate":"2016-08-08T17:18:27.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169492941"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-08-08T17:18:27.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169393707
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69393707                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2017-07-14T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69393707                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2017-07-14T00:00:00.000-04:00",
+    "status": "NN",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169393707","accountName":"HUGO MENDEZ MENDOZA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"6939370776b74569f93b47bea1d4b65a62615417","contractType":null,"creationDate":"2017-01-16T11:34:34.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169393707"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2017-01-16T11:34:34.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169197848
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69197848                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-08-09T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69197848                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-08-09T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169197848","accountName":"DELFIN ORTIZ ARENAS","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69197848","contractType":null,"creationDate":"2016-08-09T20:49:33.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169197848"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-08-09T20:49:33.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169509917
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69509917                    ",
+    "accountName": "JUAN DE DIOS                            ",
+    "billingAddress": {},
+    "billingInfo": {},
+    "clientCode": 13983236,
+    "contract": 7563858,
+    "contractType": null,
+    "creationDate": "2014-03-26T00:00:00.000-04:00",
+    "csn": null,
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69509917                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2014-03-26T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={
+  "errors": [{
+    "status": "500",
+    "title": "Codec not found for requested operation: [bigint <-> java.math.BigDecimal]",
+    "meta": {
+      "recoverable": true,
+      "message": "Fail",
+      "exception-type": "com.datastax.driver.core.exceptions.CodecNotFoundException",
+      "stacktrace": ["com.datastax.driver.core.CodecRegistry.notFound(CodecRegistry.java:679)", "com.datastax.driver.core.CodecRegistry.createCodec(CodecRegistry.java:526)", "com.datastax.driver.core.CodecRegistry.findCodec(CodecRegistry.java:506)", "com.datastax.driver.core.CodecRegistry.access$200(CodecRegistry.java:140)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:211)", "com.datastax.driver.core.CodecRegistry$TypeCodecCacheLoader.load(CodecRegistry.java:208)", "com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524)", "com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317)", "com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280)", "com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195)", "com.google.common.cache.LocalCache.get(LocalCache.java:3934)", "com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938)", "com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821)", "com.datastax.driver.core.CodecRegistry.lookupCodec(CodecRegistry.java:480)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:448)", "com.datastax.driver.core.CodecRegistry.codecFor(CodecRegistry.java:430)", "com.datastax.driver.core.AbstractGettableByIndexData.codecFor(AbstractGettableByIndexData.java:69)", "com.datastax.driver.core.AbstractGettableByIndexData.getDecimal(AbstractGettableByIndexData.java:260)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:26)", "com.datastax.driver.core.AbstractGettableData.getDecimal(AbstractGettableData.java:175)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructValue(Query.scala:391)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$34.apply(Query.scala:400)", "scala.collection.TraversableLike$$anonfun$filterImpl$1.apply(TraversableLike.scala:248)", "scala.collection.immutable.List.foreach(List.scala:381)", "scala.collection.TraversableLike$class.filterImpl(TraversableLike.scala:247)", "scala.collection.TraversableLike$class.filter(TraversableLike.scala:259)", "scala.collection.AbstractTraversable.filter(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.com$qvantel$rubik$cm$data$Query$$constructGroupValue(Query.scala:400)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:371)", "com.qvantel.rubik.cm.data.Query$$anonfun$32.apply(Query.scala:370)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)", "scala.collection.immutable.Map$Map1.foreach(Map.scala:116)", "scala.collection.TraversableLike$class.map(TraversableLike.scala:234)", "scala.collection.AbstractTraversable.map(Traversable.scala:104)", "com.qvantel.rubik.cm.data.Query$.attributesFromRow(Query.scala:370)", "com.qvantel.rubik.cm.data.Query$.resourceFromRow(Query.scala:346)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:60)", "com.qvantel.rubik.cm.database.CassandraPersistence$$anonfun$getResource$1$$anonfun$apply$2$$anonfun$apply$3.apply(CassandraPersistence.scala:52)", "scala.util.Success$$anonfun$map$1.apply(Try.scala:237)", "scala.util.Try$.apply(Try.scala:192)", "scala.util.Success.map(Try.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:237)", "scala.concurrent.impl.CallbackRunnable.run_aroundBody0(Promise.scala:32)", "scala.concurrent.impl.CallbackRunnable$AjcClosure1.run(Promise.scala:1)", "org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)", "kamon.scala.instrumentation.FutureInstrumentation$$anonfun$aroundExecution$1.apply(FutureInstrumentation.scala:45)", "kamon.trace.Tracer$.withContext(TracerModule.scala:58)", "kamon.scala.instrumentation.FutureInstrumentation.aroundExecution(FutureInstrumentation.scala:44)", "scala.concurrent.impl.CallbackRunnable.run(Promise.scala:31)", "scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:121)", "scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)", "scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253)", "scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346)", "scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)", "scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)"]
+    }
+  }]
+}
+
+
+Finish waterfall: Comparing for:59169303191
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69303191                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2015-12-10T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69303191                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2015-12-10T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169303191","accountName":"NAYELI ESTHER HUANCA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69303191","contractType":null,"creationDate":"2015-12-10T20:54:32.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169303191"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2015-12-10T20:54:32.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169505557
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69505557                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2014-06-03T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69505557                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2014-06-03T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169505557","accountName":"ADRIANA JEMIMA MELGAR PEDRAZA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69505557","contractType":null,"creationDate":"2014-06-03T11:33:09.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169505557"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2014-06-03T11:33:09.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59178854728
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "78854728                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2014-09-02T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "78854728                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "GSM - Plan 672 - Prepago TIGO           ",
+      "planType": "PRE",
+      "planCode": 672,
+      "planDescription": "GSM - Plan 672 - Prepago TIGO           ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2014-09-02T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59178854728","accountName":"ALBANIA ZAMPIERY VASQUEZ","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"78854728","contractType":null,"creationDate":"2014-09-02T15:22:04.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59178854728"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2014-09-02T15:22:04.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59178942499
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "78942499                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2013-07-09T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "78942499                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2013-07-09T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59178942499","accountName":"MIRIAM MARITSA BLACUTT REVOLLO","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"78942499","contractType":null,"creationDate":"2013-07-09T18:15:52.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59178942499"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2013-07-09T18:15:52.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169169424
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69169424                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2017-02-10T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69169424                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2017-02-10T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169169424","accountName":"JON SOTO CAMACHO","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"691694240288060cd6a147d48dd867cfa0a273c3","contractType":null,"creationDate":"2017-02-10T18:39:53.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169169424"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2017-02-10T18:39:53.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59178892707
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "78892707                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2015-06-06T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "78892707                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "GSM - Plan 672 - Prepago TIGO           ",
+      "planType": "PRE",
+      "planCode": 672,
+      "planDescription": "GSM - Plan 672 - Prepago TIGO           ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2015-06-06T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59178892707","accountName":"MARCOS YOBEL CAMA VILLCA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"78892707","contractType":null,"creationDate":"2015-06-07T00:08:52.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59178892707"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2015-06-07T00:08:52.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59178936040
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "78936040                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2017-07-26T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "78936040                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2017-07-26T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59178936040","accountName":"DIEGO VALERIO APAZA CONDE","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"78936040","contractType":null,"creationDate":"2014-09-02T16:26:36.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59178936040"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2014-09-02T16:26:36.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169147226
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69147226                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2014-07-06T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69147226                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2014-07-06T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169147226","accountName":"NATIVIDAD MIRANDA GORENA","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69147226","contractType":null,"creationDate":"2014-07-06T17:50:59.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169147226"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2014-07-06T17:50:59.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169076816
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69076816                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2016-09-05T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69076816                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2016-09-05T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169076816","accountName":"RAUMIR AVE CRESPO","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"69076816","contractType":null,"creationDate":"2016-09-05T13:58:43.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169076816"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2016-09-05T13:58:43.000Z","status":"active","telephonyType":null}}
+
+
+Finish waterfall: Comparing for:59169207321
+=====LEGACY
+=
+{
+  "account": {
+    "accountId": "69207321                    ",
+    "accountName": "IVR",
+    "billingAddress": {
+      "address": "LPZ - AGENCIA PRINCIPAL (CALLE LOAYZA)",
+      "city": 0,
+      "department": null,
+      "zone": null
+    },
+    "billingInfo": {
+      "billingCycle": "F",
+      "codeBillingCycle": "F"
+    },
+    "clientCode": 1501554,
+    "contract": 1132,
+    "contractType": null,
+    "creationDate": "2017-04-06T00:00:00.000-04:00",
+    "csn": null,
+    "cycle": "F",
+    "line": {
+      "imei": null,
+      "imsi": null,
+      "msisdn": "69207321                    "
+    },
+    "partNum": null,
+    "plan": {
+      "planName": "Plan 189 - LTE Prepago Handset          ",
+      "planType": "PRE",
+      "planCode": 189,
+      "planDescription": "Plan 189 - LTE Prepago Handset          ",
+      "planSource": null,
+      "dataPlanOnly": false
+    },
+    "portability": null,
+    "scoring": null,
+    "startDate": "2017-04-06T00:00:00.000-04:00",
+    "status": "AC",
+    "telephonyType": null
+  }
+}      
+        
+BSS=======
+={"account":{"accountId":"59169207321","accountName":"unknown","billingAddress":{},"billingInfo":{},"clientCode":"1501554","contract":"692073214bc8532774b84ae2b6f76e36818a998f","contractType":null,"creationDate":"2017-03-02T19:42:55.000Z","csn":null,"line":{"imei":null,"imsi":null,"msisdn":"59169207321"},"partNum":null,"plan":{"planName":"TIGO_PREPAGO_LTE","planType":"prepaid","planCode":null,"planDescription":null,"planSource":null,"dataPlanOnly":null},"portability":null,"scoring":null,"startDate":"2017-03-02T19:42:55.000Z","status":"active","telephonyType":null}}
+
+[[[[=====================end iteration async series================]]]]
